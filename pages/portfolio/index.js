@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MdExpandMore } from "react-icons/md";
@@ -7,48 +7,42 @@ import reactParallax from "../../public/assets/portfolio/reactParallax.jpg";
 import usestate from "../../public/assets/portfolio/usestate.jpg";
 import reactWeather from "../../public/assets/portfolio/reactWeather.jpg";
 
-
-export const getStaticProps = async () =>{
-    const portfolios = [
-        {
-          id: 1,
-          title: "React Weather App",
-          imageSrc: reactWeather,
-          url: "react-weather",
-        },
-        {
-          id: 2,
-          title: "Install Node",
-          imageSrc: installNode,
-          url: "install-node",
-        },
-        {
-          id: 3,
-          title: "Use State Explained",
-          imageSrc: usestate,
-          url: "use-state-hook",
-        },
-        {
-          id: 4,
-          title: "React Parallax Scroll",
-          imageSrc: reactParallax,
-          url: "react-parallax",
-        }
-      ];
-      return{
-        props:{
-            portfolios
-        }
-      };
-
-}
-const portfolioRoutes = ({portfolios}) => {
-    
-    
+export const getStaticProps = async () => {
+  const portfolios = [
+    {
+      id: 1,
+      title: "React Weather App",
+      imageSrc: reactWeather,
+      url: "react-weather",
+    },
+    {
+      id: 2,
+      title: "Install Node",
+      imageSrc: installNode,
+      url: "install-node",
+    },
+    {
+      id: 3,
+      title: "Use State Explained",
+      imageSrc: usestate,
+      url: "use-state-hook",
+    },
+    {
+      id: 4,
+      title: "React Parallax Scroll",
+      imageSrc: reactParallax,
+      url: "react-parallax",
+    },
+  ];
+  return {
+    props: {
+      portfolios,
+    },
+  };
+};
+const portfolioRoutes = ({ portfolios }) => {
   return (
-    
     <div id="portfolio" className="w-full">
-    
       <div className="max-w-screen-xl mx-auto pt-24 p-4 text-center md:text-left">
         <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-red-900 font-bold pb-16">
           All Projects
@@ -91,17 +85,16 @@ const portfolioRoutes = ({portfolios}) => {
           {/*{1:09:09}   */}
           <Link href="/#home">
             <div className="mr-auto group flex items-center justify-center my-8 bg-cyan-900 text-white px-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
-            <span className="rotate-90 duration-100 ease-in group-hover:-translate-x-2">
+              <span className="rotate-90 duration-100 ease-in group-hover:-translate-x-2">
                 <MdExpandMore size={25}></MdExpandMore>
               </span>
-              Go back 
+              Go back
             </div>
           </Link>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default portfolioRoutes
-
+export default portfolioRoutes;

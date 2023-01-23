@@ -81,7 +81,7 @@ const OnePortfolio = ({ portfolio: { title, imageSrc, description } }) => {
           {title}
         </h1>
         <div className=" relative w-96 h-56 mx-auto overflow-hidden my-8 shadow-md shadow-red-900">
-          <Image src={imageSrc} alt="asda"></Image>
+          <Image src={imageSrc} alt={title}></Image>
         </div>
         <h2 className="text-left md:text-left my-4 text-2xl">Desctiption</h2>
         <p className="text-left ">{description}</p>

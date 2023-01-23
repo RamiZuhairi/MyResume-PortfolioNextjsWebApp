@@ -100,9 +100,9 @@ const NavBar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/#home">
-                {/* <h2 className=' text-lg font-bold uppercase underline underline-offset-2 tracking-wider'>Ramixxx Zuhairi</h2> */}
                 <div className="w-24">
                   <Image
+                    alt="Icon RZ"
                     src={icon}
                     onClick={() => setNavigation(false)}
                   ></Image>

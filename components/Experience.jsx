@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { MdExpandMore } from "react-icons/md";
 import css from "../public/assets/experience/css.png";
-import GitHub from "../public/assets/experience/GitHub.png";
+import GitHub from "../public/assets/experience/github.png";
 import powershell from "../public/assets/experience/powershell.png";
 import html from "../public/assets/experience/html.png";
 import javaScript from "../public/assets/experience/javaScript.png";
